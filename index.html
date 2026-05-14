@@ -95,7 +95,7 @@
             <!-- الحقل الثاني: الملخص الجديد -->
             <div class="section-card">
                 <h3>الملخص الجديد</h3>
-                <p>أسئلة شاملة للطاقة ونظم الإنتاج (120 سؤال)</p>
+                <p>ملخص الفلسجة (120 سؤال)</p>
                 <div class="card-btns">
                     <button class="btn-main btn-quiz" onclick="selectSection(2, 'quiz')">بدء الاختبار 🎯</button>
                     <button class="btn-main btn-study" onclick="selectSection(2, 'study')">قراءة الحلول 📖</button>
@@ -328,8 +328,8 @@ function selectSection(sectionNum, mode) {
         document.getElementById("quiz-title").innerText = "اختبار الأسئلة الوزارية";
     } else if(sectionNum === 2) {
         questions = shuffle([...dataNew120]); 
-        document.getElementById("study-title").innerText = "قراءة الحلول - الملخص الجديد للطاقة (120 سؤال)";
-        document.getElementById("quiz-title").innerText = "اختبار الملخص الجديد للطاقة";
+        document.getElementById("study-title").innerText = "قراءة الحلول - الملخص الجديد  (120 سؤال)";
+        document.getElementById("quiz-title").innerText = "اختبار الملخص الجديد ";
     }
 
     document.getElementById("home-screen").style.display = "none";
